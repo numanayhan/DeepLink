@@ -23,6 +23,14 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 Description of what the lane does
 
+### ios certificates
+
+```sh
+[bundle exec] fastlane ios certificates
+```
+
+
+
 ### ios build
 
 ```sh
@@ -43,6 +51,14 @@ Description of what the lane does
 
 ```sh
 [bundle exec] fastlane ios release
+```
+
+
+
+### ios released
+
+```sh
+[bundle exec] fastlane ios released
 ```
 
 
