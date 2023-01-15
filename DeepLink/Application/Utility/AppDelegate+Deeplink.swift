@@ -13,8 +13,9 @@ import UIKit
 extension AppDelegate {
     func application(_ app: UIApplication, open url: URL,
                      options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        print("url",url.description)
         if let scheme = url.scheme,
-            scheme.localizedCaseInsensitiveCompare("com.deeplink") == .orderedSame,
+            scheme.localizedCaseInsensitiveCompare("app") == .orderedSame,
             let view = url.host {
             var parameters: [String: String] = [:]
             URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems?.forEach {
@@ -28,6 +29,7 @@ extension AppDelegate {
     public func application(_ application: UIApplication,
                             continue userActivity: NSUserActivity,
                             restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+        print("userActivity",userActivity.description)
         if let url = userActivity.webpageURL {
             let view = url.lastPathComponent
             var parameters: [String: String] = [:]

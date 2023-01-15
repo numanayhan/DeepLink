@@ -26,6 +26,7 @@
 		0DC709182974361100EDC1E1 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		0DC7091C2974365600EDC1E1 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		0DC70920297436D300EDC1E1 /* AppDelegate+Deeplink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Deeplink.swift"; sourceTree = "<group>"; };
+		0DC709222974406F00EDC1E1 /* DeepLink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeepLink.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +107,7 @@
 		0DC7091B2974361900EDC1E1 /* Supports */ = {
 			isa = PBXGroup;
 			children = (
+				0DC709222974406F00EDC1E1 /* DeepLink.entitlements */,
 				0DC7090F297435D800EDC1E1 /* Info.plist */,
 			);
 			name = Supports;
@@ -329,9 +331,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DeepLink/DeepLink.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N55427589M;
+				DEVELOPMENT_TEAM = H6H5489H9H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DeepLink/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -346,7 +349,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hrdijital.deeplink;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hrdijital.deeplinks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -359,9 +362,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DeepLink/DeepLink.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N55427589M;
+				DEVELOPMENT_TEAM = H6H5489H9H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DeepLink/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -376,7 +380,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hrdijital.deeplink;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hrdijital.deeplinks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
