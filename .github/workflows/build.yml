@@ -24,4 +24,4 @@ jobs:
         env:
           scheme: ${{ 'default' }}
           platform: ${{ 'iOS Simulator' }}
-        run: fastlane build
+        run: fastlane custom_lane

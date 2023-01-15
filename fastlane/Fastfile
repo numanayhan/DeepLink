@@ -29,7 +29,6 @@ platform :ios do
     #sync_code_signing(type: "appstore")
     #setup_ci if ENV['CI']
     #match(type: 'appstore')
-    xcode_select("/Applications/Xcode13.app")
     build_app(
       scheme: "DeepLink",
       silent: true,
