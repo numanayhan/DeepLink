@@ -26,7 +26,7 @@ platform :ios do
      
   end
   lane :build do
-    sync_code_signing(type: "appstore")
+    #sync_code_signing(type: "appstore")
     #setup_ci if ENV['CI']
     #match(type: 'appstore')
     build_app(
@@ -38,8 +38,7 @@ platform :ios do
       output_directory: "./fastlane/archive",
       output_name: "./fastlane/archive/DeepLink.ipa",
       xcargs: "-allowProvisioningUpdates",
-      include_bitcode: true,
-      export_method: "app-store"
+      include_bitcode: true
    ) 
    # upload_to_testflight(skip_waiting_for_build_processing: true)
   end
