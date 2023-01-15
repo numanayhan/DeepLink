@@ -8,4 +8,5 @@ team_id("H6H5489H9H") # Developer Portal Team ID
 #     https://docs.fastlane.tools/advanced/#appfile
 ENV["FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD"] = "lgbp-izmy-nzqo-oyxc"
 ENV['MATCH_GIT_BASIC_AUTHORIZATION'] = 'bnVtYW5heWhhbjpnaHBfbEdmSlZaaGZobkR5ZjlEV3h2TVpBbWNxZGJ6YjZaMjcwNzFO'
-ENV['MATCH_PASSWORD'] ="123456"
+ENV['MATCH_PASSWORD'] = "123456"
+ENV['FASTLANE_PASSWORD'] = "Opagis54**" 

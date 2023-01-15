@@ -38,7 +38,8 @@ platform :ios do
       output_directory: "./fastlane/archive",
       output_name: "./fastlane/archive/DeepLink.ipa",
       xcargs: "-allowProvisioningUpdates",
-      include_bitcode: true
+      include_bitcode: true,
+      export_method: "app-store"
    ) 
    # upload_to_testflight(skip_waiting_for_build_processing: true)
   end
