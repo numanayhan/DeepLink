@@ -32,7 +32,7 @@ platform :ios do
       export_method: "app-store", 
       archive_path: "./fastlane/archive/build",
       output_directory: "./fastlane/archive",
-      output_name: "DeepLink.ipa",
+      output_name: "./fastlane/archive/DeepLink.ipa",
       xcargs: "-allowProvisioningUpdates",
       include_bitcode: true
    ) 
