@@ -30,15 +30,11 @@ platform :ios do
     #setup_ci if ENV['CI']
     #match(type: 'appstore')
     build_app(
-      scheme: "DeepLink",
-      silent: true,
-      clean: true,
+      scheme: "DeepLink", 
       export_method: "app-store", 
       archive_path: "./fastlane/archive/build",
       output_directory: "./fastlane/archive",
-      output_name: "./fastlane/archive/DeepLink.ipa",
-      xcargs: "-allowProvisioningUpdates",
-      include_bitcode: true
+      output_name: "./fastlane/archive/DeepLink.ipa" 
    ) 
    # upload_to_testflight(skip_waiting_for_build_processing: true)
   end
