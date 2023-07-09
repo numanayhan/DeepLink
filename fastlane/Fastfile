@@ -26,7 +26,7 @@ platform :ios do
      
   end
   lane :build do
-    #sync_code_signing(type: "appstore")
+    sync_code_signing(type: "appstore")
     #setup_ci if ENV['CI']
     #match(type: 'appstore')
     build_app(
@@ -34,7 +34,8 @@ platform :ios do
       export_method: "app-store", 
       archive_path: "./fastlane/archive/build",
       output_directory: "./fastlane/archive",
-      output_name: "./fastlane/archive/DeepLink.ipa" 
+      output_name: "./fastlane/archive/DeepLink.ipa" ,
+      xcargs: "-allowProvisioningUpdates"
    ) 
    # upload_to_testflight(skip_waiting_for_build_processing: true)
   end
@@ -56,7 +57,9 @@ platform :ios do
     end 
     lane :released do
       sync_code_signing
+      disable_automatic_code_signing(path: "DeepLink.xcodeproj")
       build
-     #upload_to_testflight
+      enable_automatic_code_signing(path: "DeepLink.xcodeproj")
+      #upload_to_testflight
     end
 end
